@@ -7,17 +7,19 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
+  const accountNames = accounts.map((a) => a.name);
+  const balances = accounts.map((a) => a.currentBalance)
+
   const data = {
     datasets: [
       {
         label: 'Banks',
-        data: [1250, 1000, 500],
+        data: balances,
         backgroundColor: ['#0747b6', '#2265d8', '#2f91fa'] 
       }
     ],
-    labels: ['Bank 1', 'Bank 2', 'Bank 3']
+    labels: accountNames
   }
 
   return <Doughnut 
@@ -33,4 +35,4 @@ const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
   />
 }
 
-export default DoughnutChart 
+export default DoughnutChart
