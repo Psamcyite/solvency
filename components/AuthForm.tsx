@@ -8,8 +8,15 @@ import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { Button } from "@/components/ui/button"
-import { Form } from "@/components/ui/form"
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import CustomInput from './CustomInput';
 import { authFormSchema } from '@/lib/utils';
@@ -81,8 +88,8 @@ const AuthForm = ({ type }: { type: string }) => {
           <Link href="/" className="cursor-pointer flex items-center gap-1">
             <Image 
               src="/icons/solvency.png"
-              width={44}
-              height={44}
+              width={34}
+              height={34}
               alt="Solvency logo"
             />
             <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">Solvency</h1>
@@ -166,4 +173,4 @@ const AuthForm = ({ type }: { type: string }) => {
   )
 }
 
-export default AuthForm;
+export default AuthForm

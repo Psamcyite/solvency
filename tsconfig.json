@@ -1,4 +1,6 @@
 {
+  // Disable schema validation to avoid network issues
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -22,6 +24,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/global-error.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/global-error.tsx", "next.config.mjs"],
   "exclude": ["node_modules"]
 }
