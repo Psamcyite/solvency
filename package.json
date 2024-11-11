@@ -1,5 +1,5 @@
 {
-  "name": "jsm_banking",
+  "name": "solvency",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,13 +16,12 @@
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
-    "@sentry/nextjs": "^7.112.2",
     "chart.js": "^4.4.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dwolla-v2": "^3.4.0",
     "lucide-react": "^0.374.0",
-    "next": "14.2.3",
+    "next": "^14.2.17",
     "node-appwrite": "^12.0.1",
     "plaid": "^23.0.0",
     "query-string": "^9.0.0",
