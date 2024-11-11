@@ -13,9 +13,9 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 export const metadata: Metadata = {
   title: "Solvency",
-  description: "Solvency is a secure and user-friendly banking app that leverages cutting-edge technology to provide seamless financial management.",
+  description: "Solvency is a modern banking platform for everyone.",
   icons: {
-    icon: '/icons/logo.svg'
+    icon: '/icons/solency.png'
   }
 };
 
